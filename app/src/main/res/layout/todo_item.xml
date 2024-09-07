@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="8dp"
+    app:cardCornerRadius="20dp"
+    app:strokeColor="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="namenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamename"
+            android:textSize="20sp"
+            android:id="@+id/name"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginEnd="50dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/09/2024"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            android:id="@+id/Date"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:contentDescription="checkbox"
+            android:id="@+id/completeButton"
+            android:src="@drawable/unchecked_24"
+            android:backgroundTint="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
