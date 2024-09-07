@@ -10,7 +10,7 @@ class MyDiffUtil(
 
     override fun getNewListSize() = newList.size
     override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-        return oldList[oldItemPosition].ID == newList[newItemPosition].ID
+        return oldList[oldItemPosition].id == newList[newItemPosition].id
     }
 
     override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
